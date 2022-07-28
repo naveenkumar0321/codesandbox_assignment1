@@ -1,146 +1,138 @@
-* {
+*{
   margin: 0;
   padding: 0;
 }
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2rem 8rem;
-  font-family: "Orbitron", Helvetica, sans-serif;
-  font-weight: 600;
-}
-
-.list-item {
-  list-style: none;
-  margin: 0 1rem;
-}
-
-li:nth-child(1) {
-  text-decoration: underline;
-}
-ul .list-item:nth-child(1) {
-  order: -2;
-}
-ul .list-item:nth-child(3) {
-  order: -1;
-}
-.list-item:nth-child(1) {
-  font-size: 1.3rem;
-  font-weight: 800;
-  text-decoration: underline;
-}
-
-.list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.button-group {
-  display: flex;
-  align-items: center;
-}
-.square {
-  position: absolute;
-  bottom: 0px;
-  left: 100px;
-}
-
-.hero-image {
-  width: 450px;
-}
-
-button {
-  padding: 0.5rem 3rem;
-  background-color: transparent;
-  border-radius: 0.5rem;
-  font-family: "Poppins", Helvetica, sans-serif;
-  font-size: 1.1rem;
-  margin-left: 1rem;
-}
-.hero-container {
-  margin: 5rem 8rem 2rem 8rem;
-  position: relative;
-  display: flex;
-  gap: 5rem;
-}
-
-.square {
-  position: absolute;
-  z-index: -1;
-  bottom: -70px;
-}
-
-.hero-container-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-heading {
+.navbar-container{
   display: flex;
   flex-direction: row;
-  font-size: 4rem;
-  font-weight: bold;
-  font-family: "Orbitron", sans-serif;
-  margin: 4rem 2rem 2rem 4rem;
+  margin:40px;
+  font-family:sans-serif;
 }
-
-.hero-description {
-  font-family: "Poppins", sans-serif;
-  width: 60%;
-  text-align: center;
-  color: rgb(69, 69, 69);
-  margin-bottom: 5rem;
-}
-
-.button-join,
-.button-email {
+.navbar-container>div>img{
   display: flex;
-  font-family: "Orbitron", Helvetica, sans-serif;
-  font-weight: 800;
+  flex-direction: row;
+  margin-right: 100px;
+
 }
 
-.button-email {
-  color: gray;
-  border-color: gray;
+.list{
+  display: flex;
+  flex-direction: row;
+  /* margin-left: 30px; */
 }
 
-.button-join {
-  background-color: black;
-  color: #fff;
+.list li{
+  list-style-type: none;
+  display:flex;
+  margin-right:30px;
+  font-size:25px;
+}
+.list li:hover{
+  font-weight: 600;
+  text-decoration: underline;
+  cursor:pointer;
+}
+.button-group{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  justify-content: flex-end;
+  margin-top:5px;
+  margin-right: -6px; 
 }
 
-.contact {
+.search-icon svg{
+  width:30px !important;
+  height:25px !important;
+  margin-top: 15px;
+}
+.nav-button{
+  padding:10px 40px;
+  border-radius: 10px;
+  font-size:20px;
+  margin-left:10px;
+}
+
+/* hero-container */
+
+.hero-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.square{
+  position: relative;
+  width:70px;
+  top:170px;
+  left:95px;
+}
+.star{
+ position: relative; 
+ left:960px;
+ top:50px
+
+}
+.star img{
+  height:50px;
+  width:50px;
+}
+.globe{
+  position: relative;
+  left:550px;
+}
+.globe img{
+  width:50px;
+  height:50px;
+}
+.globe+div>img{
+  position: relative;
+  width:400px;
+  height:500px;
+  right:130px;
+  top: 25px;
+}
+
+.hero-container-right{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 75% !important;
+  margin-top: 88px;
   justify-content: center;
-  font-family: "Poppins", Helvetica, sans-serif;
-  margin-top: 5rem;
-}
-.contact-heading {
-  font-weight: 400;
-  font-size: larger;
-  color: rgb(59, 59, 59);
-  margin-bottom: 1rem;
-  margin-left: 2.5rem;
+  text-align: center;
 }
 
-.star,
-.globe {
-  position: absolute;
+.hero-heading{
+  font-size:52px;
+  font-family: sans-serif;
+}
+.hero-description{
+  font-family: sans-serif;
+  font-size: 14px;
 }
 
-.globe {
-  left: 60%;
-  top: -40px;
+.button-email{
+margin-top: 60px;
+background-color: #fff;
+padding: 3px 20px;
+border-radius: 6px;
+color:#5a5a58;
+border:1px solid black;
+margin-right:15px;
+}
+.button-join{
+  margin-top: 60px;
+  background-color: rgb(0,0,0);
+  color: #fff;
+  border-radius: 5px;
+  padding:2.5px 3px;
+  font-family: sans-serif;
 }
 
-.star {
-  top: 10px;
-  right: 10%;
+.contact-heading{
+  margin-top:60px;
+  color: #848480;
+  font-family: sans-serif;
+}
+.icons>span>img{
+ margin-right: 13px;
 }
